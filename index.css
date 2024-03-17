@@ -1,0 +1,186 @@
+/* variables*/
+:root {
+  --primaryColor: #4fe98c;
+  --bgColor: #0c0c0c;
+  --whiteColor: #ffff;
+  --darkColor: #091420;
+  --borderColor: #0c1a28;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: var(--bgColor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+p {
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+img {
+  max-width: 100;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.container {
+  width: 80%;
+  float: right;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.innercontainer {
+  background-color: var(--darkColor);
+  border: 1px solid var(--borderColor);
+  width: 80%;
+  padding: 60px;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.innercontainer img {
+  width: 200px;
+  display: block;
+  margin-bottom: 15px;
+}
+.innercontainer h5 {
+  color: var(--primaryColor);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.innercontainer h3 {
+  color: var(--whiteColor);
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.innercontainer .btn{
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: 14px;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.innercontainer .btn:hover {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+
+/*header area*/
+#header {
+  position: fixed;
+  width: 20%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100;
+  background-image: linear-gradient(62deg, #c9fa84, #3eb3cb 100%);
+}
+#main ul li {
+  display: block;
+}
+#main ul li {
+  display: block;
+  padding: 18px 45px;
+  color: var(--whiteColor);
+  font-weight: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#main ul li a:hover,active {
+  background: var(--primaryColor);
+  color: var(--bgColor);
+}
+#main ul li {
+  padding-right: 15px;
+}
+
+/*service area*/
+.service {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.servicecard {
+  flex-basis: 24%;
+  background: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  padding: 35px 25px;
+  border-radius: 10px;
+}
+.servicecard i {
+  color: var(--primaryColor);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.service h4 {
+  color: var(--whiteColor);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.service p {
+  font-size: 14px;
+  color: white;
+}
+
+/*contact area*/
+#contact {
+  margin-top: 100px;
+}
+#contact form{
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact input,#contact textarea{
+    background-color: var(--bgColor);
+    border: 1px solid var(--borderColor);
+    padding: 12px 15px;
+    color: var(--whiteColor);
+    width: 48%;
+}
+#contact textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#contact input[type="submit"]{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    width: 200px;
+    transition: 0.5s;
+}
+#contact input[type="submit"]:hover {
+    background-color: var(--whiteColor);
+    color: var(--primaryColor);
+}
+
+/*Responsive css*/

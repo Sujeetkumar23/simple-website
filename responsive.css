@@ -1,0 +1,63 @@
+/*responsive css*/
+
+@media only screen and (min-width:200px) and (max-width:765px) {
+    #header {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 60px;
+        
+      }
+      #main ul  {
+        text-align: center;
+      }
+      #main ul li {
+        display: inline-block;
+        
+      }
+      #main ul li a i {
+        padding-right: 0px;
+      }
+     #main ul li a span{
+       display: none;
+     }
+     .container {
+      width: 100%;
+     
+    }
+    .innercontainer {
+      width: 95%;
+      padding: 15px;
+      border-radius: 15px;
+    
+    }
+    .innercontainer h3 {
+      color: var(--whiteColor);
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+    .service {
+     flex-wrap: wrap;
+     
+    }
+    .servicecard {
+      flex-basis: 48%;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .service p {
+      display: none;
+    }
+    .service h4 {
+      font-size: 15px;
+    }
+    #contact form{
+      margin-top: 100px;
+    }
+    #contact {
+      margin-top: 200px;
+    }
+}
